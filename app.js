@@ -1,4 +1,4 @@
-// Fibonacci Sequence
+/* // Fibonacci Sequence
 const fibo = (n) => {
   let i = 0
   let arr = []
@@ -47,27 +47,23 @@ const shuffle = arr => {
 
 
 //Clock
+const checkZero = n => {
+  if (n <= 9) {
+    n = '0' + n
+  }
+  return n
+}
+
 const clock = () => {
   let d = new Date()
-  let h = d.getHours()
-  let m = d.getMinutes()
-  let s = d.getSeconds()
-
-  if (h <= 9) {
-    h = '0' + h
-  }
-  if (m <= 9) {
-    m = '0' + m
-  }
-
-  if (s <= 9) {
-    s = '0' + s
-  }
+  let h = checkZero(d.getHours())
+  let m = checkZero(d.getMinutes())
+  let s = checkZero(d.getSeconds())
   //return `${h}:${m}:${s}`
   console.log(`${h}:${m}:${s}`)
 }
 
-//console.log(setInterval(clock, 1000))
+console.log(setInterval(clock, 1000))
 
 // Export
-export { fibo, shuffle, clock }
+export { fibo, shuffle, clock } */
