@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "Son funciones o app para practicar diariamente lo aprendido y de a poco ir uniendo en un proyecto.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-ivan-m/HelloWorld.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-ivan-m/HelloWorld/issues"
+  },
+  "homepage": "https://github.com/m-ivan-m/HelloWorld#readme"
+}

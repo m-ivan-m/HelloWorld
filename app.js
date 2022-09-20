@@ -20,7 +20,7 @@ const fibo = (n) => {
   return arr
 }
 
-console.log(fibo(20))
+//console.log(fibo(20))
 
 //0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 //0, 1, 2, 3, 4, 5, 6, 7,  8,  9, 10,  11, 12, ...
@@ -43,7 +43,7 @@ const shuffle = arr => {
   return newArr
 }
 
-console.log(shuffle(winterPlaylist))
+//console.log(shuffle(winterPlaylist))
 
 
 //Clock
@@ -53,6 +53,9 @@ const clock = () => {
   let m = d.getMinutes()
   let s = d.getSeconds()
 
+  if (h <= 9) {
+    h = '0' + h
+  }
   if (m <= 9) {
     m = '0' + m
   }
@@ -64,4 +67,7 @@ const clock = () => {
   console.log(`${h}:${m}:${s}`)
 }
 
-console.log(setInterval(clock, 1000))
+//console.log(setInterval(clock, 1000))
+
+// Export
+export { fibo, shuffle, clock }
